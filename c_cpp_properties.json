@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/src/linux-headers-6.1.0-33-common/arch/x86/include",
+                "/usr/src/linux-headers-6.1.0-33-common/include",
+                "/usr/src/linux-headers-6.1.0-33-common/arch/x86/include/uapi",
+                "/usr/src/linux-headers-6.1.0-33-amd64/arch/x86/include/generated/uapi",
+                "/usr/src/linux-headers-6.1.0-33-amd64/arch/x86/include/generated",
+                "/usr/src/linux-headers-6.1.0-33-amd64/include"
+            ],
+            "forcedInclude": [
+                "/usr/src/linux-headers-6.1.0-33-common/include/linux/compiler-version.h",
+                "/usr/src/linux-headers-6.1.0-33-common/include/linux/kconfig.h",
+                "/usr/src/linux-headers-6.1.0-33-common/include/linux/compiler_types.h"
+            ],
+            "defines": [
+                "__KERNEL__",
+                "CC_USING_FENTRY",
+                "MODULE"
+            ],
+            "cStandard": "gnu17",
+            "compilerPath": "/usr/bin/gcc-12",
+            "compilerArgs": [
+                "nostdinc"
+            ],
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
